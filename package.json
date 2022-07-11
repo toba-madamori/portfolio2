@@ -4,7 +4,7 @@
   "description": "my portfolio",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "nodemon app.js"
   },
   "author": "Toba Madamori",
   "license": "ISC",
@@ -15,5 +15,8 @@
   },
   "engines": {
     "node": "14.x"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
   }
 }
