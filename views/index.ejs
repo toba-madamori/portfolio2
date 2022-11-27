@@ -216,6 +216,54 @@
                     <div class="h7">
                         <ul>
                             <li>
+                                <h7 class="h6">Share-Memories Api(microservices)</h7>
+                                <p class="resume-block__header-meta">
+                                    <span><a href="https://github.com/toba-madamori/Share-memories-microservices-RPC">Github</a></span> 
+                                    <p>
+                                        This is a partial social media application, with it's main features 
+                                        centering on users been able to share memories(pictures/images) that
+                                        each have meaning and the possibility for other users to like and comment on those memories.
+                                    </p>
+                                    <p><b>Stuff I did and learnt:</b></p>
+                                    <ul>
+                                        <li>Code structure and architecture: Microservices architecture</li>
+                                        <li>My first step when taking on this project was to take at least 3-4 days
+                                            to go through the requirements and to design the DB-schema, before writing any piece of code.
+                                        </li>
+                                        <li>As to the Usefulness/Real-world solution the application solves, I would say my first thoughts
+                                            went towards images helping us as humans to learn, also images grab attention, explain tough
+                                            concepts and inspire.
+                                        </li>
+                                        <li>Database: MongoDb(mongoose for ODM), reasons include:
+                                            <ul>
+                                                <li>Highly scalable(sharding and replication)</li>
+                                                <li>High performance for inserts and updates(popular actions for a social media network)</li>
+                                                <li>Flexible document schema</li>
+                                            </ul>
+                                        </li>
+                                        <li>Implemented some query and database optimisation techniques:
+                                            <ul>
+                                                <li>Added custom indexes for some schemas</li>
+                                                <li>Learnt to query only the specifically needed data(mongoose .select())</li>
+                                                <li>Running db operations in parrallel where applicable and prudent</li>
+                                            </ul>
+                                        </li>
+                                        <li>Learnt how and made use of third-party apis(cloudinary-api for image storage)</li>
+                                        <li>Learnt how and made use of rabbitmq(message broker for the RPC)</li>
+                                        <li>For Security:
+                                            <ul>
+                                                <li>Mongoose validation(database level validation)</li>
+                                                <li><a href="https://www.npmjs.com/package/helmet">Helmet</a>(HTTP headers security)</li>
+                                                <li>Cors</li>
+                                                And a few other packages.
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </p>
+                            </li>
+
+                            <br>
+                            <li>
                                 <h7 class="h6">Ev-Manager Api</h7>
                                 <p class="resume-block__header-meta">
                                     <span><a href="https://github.com/toba-madamori/Ev-Manager">Github</a></span> 
@@ -229,7 +277,7 @@
                                     <p><b>Stuff I did and learnt:</b></p>
                                     <ul>
                                         <li>Code structure and architecture: <br>
-                                            Microservices(fast, highly scalable, and easy to maintain)</li>
+                                            Monolith with the MVC pattern</li>
                                         <li>My first step when taking on this project was to take at least 3-4 days
                                             to go through the requirements and to design the DB-schema, before writing any piece of code. <br>
                                             This was to prevent(as much as possible) any technical debt in the course of building the api
@@ -257,56 +305,6 @@
                                         <li>For Security:
                                             <ul>
                                                 <li><a href="https://www.npmjs.com/package/joi">joi</a>(request layer validation)</li>
-                                                <li>Mongoose validation(database level validation)</li>
-                                                <li><a href="https://www.npmjs.com/package/helmet">Helmet</a>(HTTP headers security)</li>
-                                                <li>Cors</li>
-                                                And a few other packages.
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </p>
-                            </li>
-
-                            <br>
-                            <li>
-                                <h7 class="h6">Share-Memories Api</h7>
-                                <p class="resume-block__header-meta">
-                                    <span><a href="https://github.com/toba-madamori/Share-Memories-Api">Github</a></span> 
-                                    <span class="resume-block__header-meta">
-                                        <a href="https://documenter.getpostman.com/view/14326360/UVyrTw5Q">Live Api</a>
-                                    </span>
-                                    <p>
-                                        This is a partial social media application, with it's main features 
-                                        centering on users been able to share memories(pictures/images) that
-                                        each have meaning and the possibility for other users to like and comment on those memories.
-                                    </p>
-                                    <p><b>Stuff I did and learnt:</b></p>
-                                    <ul>
-                                        <li>Code structure and architecture: MVC Rest-API pattern</li>
-                                        <li>My first step when taking on this project was to take at least 3-4 days
-                                            to go through the requirements and to design the DB-schema, before writing any piece of code.
-                                        </li>
-                                        <li>As to the Usefulness/Real-world solution the application solves, I would say my first thoughts
-                                            went towards images helping us as humans to learn, also images grab attention, explain tough
-                                            concepts and inspire.
-                                        </li>
-                                        <li>Database: MongoDb(mongoose for ODM), reasons include:
-                                            <ul>
-                                                <li>Highly scalable(sharding and replication)</li>
-                                                <li>High performance for inserts and updates(popular actions for a social media network)</li>
-                                                <li>Flexible document schema</li>
-                                            </ul>
-                                        </li>
-                                        <li>Implemented some query and database optimisation techniques:
-                                            <ul>
-                                                <li>Added custom indexes for some schemas</li>
-                                                <li>Learnt to query only the specifically needed data(mongoose .select())</li>
-                                                <li>Running db operations in parrallel where applicable and prudent</li>
-                                            </ul>
-                                        </li>
-                                        <li>Learnt how and made use of third-party apis(cloudinary-api for image storage)</li>
-                                        <li>For Security:
-                                            <ul>
                                                 <li>Mongoose validation(database level validation)</li>
                                                 <li><a href="https://www.npmjs.com/package/helmet">Helmet</a>(HTTP headers security)</li>
                                                 <li>Cors</li>
@@ -373,10 +371,7 @@
                     <div class="resume-block__header">
                         <h4 class="h6">Federal University of Benin,Edo State, Nigeria</h4>
                         <p class="resume-block__header-meta">
-                            <span>Bachelors degree in Pure and Applied Physics(awaiting)</span> 
-                            <span class="resume-block__header-date">
-                                Nov 2022
-                            </span>
+                            <span>Bachelors degree in Pure and Applied Physics</span> 
                         </p>
                     </div>
                 </div> <!-- end resume-block -->
